@@ -1,6 +1,6 @@
 # Credit Risk Analysis: Reducing Loan Defaults through Pattern Recognition
 ## About 
-The main goal of this project was to study Nova Bank’s loans to figure out why some people fail to pay back their loans. The analysis looks for the main factors that cause defaults and suggests practical steps the bank can take to reduce losses.
+The main goal of this project is to study Nova Bank’s loans to figure out why some people fail to pay back their loans. The analysis looks for the main factors that cause defaults and suggests practical steps the bank can take to reduce losses.
 
 The main thing we’re looking at is whether a loan was paid back or not (loan_status = 0 for paid, 1 for default).
 
@@ -56,14 +56,8 @@ loan_to_income_ratio - Loan amount relative to annual income
 Before analysis, the dataset was evaluated for quality issues:
 
 Missing Values: Identified columns with missing data .
-Duplicates: Checked for and removed duplicate client_ID records.
-Outliers: Detected extreme values IQR method.
+Duplicates: Checked for duplicates
 Data Types: Ensured all variables were stored in appropriate formats.
-Encoding Consistency: Normalized categorical values for consistency.
-Key Findings:
-
-Employment length and interest rate contained missing values.
-Some financial variables showed extreme outliers requiring further investigation.
 
 ## Key Insights
 ### 1. How does the size of a loan compared to a person’s income affect their chances of defaulting?
@@ -134,10 +128,9 @@ Grades D–G: Extremely high default rates (59–98%), even if there are fewer l
 
 Grade G: Almost everyone defaults (98%), but there are only 64 loans. Still, even a small number of these loans can be risky.
 
-Therefore,  Nova bank should be very careful lending to Grades D–G, as these grades account for the largest risk exposure, even though there are fewer loans in these groups.
+Therefore,  Nova bank should be very careful lending to Grades D–G, as these grades account for the largest risk exposure, even though there are fewer loans in these groups
 
-# Key Takeaways & Recommendations
-
+## Recommendations
 Loan Size vs. Income: Loans above 20–25% of a person’s income are high-risk. Carefully review or limit these applications.
 
 Existing Debt (DTI): Borrowers with DTI > 40% are likely to default. Flag or decline these loans.
